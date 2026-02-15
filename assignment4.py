@@ -1,4 +1,10 @@
-activityscores = [23,4,56,89,67]
+activityscores = []
+n = int(input("Enter number of activity scores: "))
+i = 0
+while i < n:
+    score = int(input("Enter score: "))
+    activityscores = activityscores + [score]
+    i = i + 1
 
 rollnumber = input("Enter your Register Number: ")
 D = int(rollnumber[-1])
