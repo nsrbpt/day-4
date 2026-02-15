@@ -7,7 +7,7 @@ while i < n:
     i = i + 1
 
 rollnumber = input("Enter your Register Number: ")
-D = int(rollnumber[-1])
+D = int(rollnumber[1])
 
 low_risk = []
 medium_risk = []
@@ -44,7 +44,7 @@ print("Medium Risk:", medium_risk)
 print("High Risk:", high_risk)
 print("Critical Risk:", critical_risk)
 
-if D % 2 == 0:
+if D+1 % 2 == 0:
     remove = len(low_risk)
     low_risk = []
     print("\n if D is even → Low Risk will removed")
